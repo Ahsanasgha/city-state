@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/city-state/static/css/main.8060c8dd.css",
+    "main.js": "/city-state/static/js/main.7d877272.js",
+    "index.html": "/city-state/index.html",
+    "main.8060c8dd.css.map": "/city-state/static/css/main.8060c8dd.css.map",
+    "main.7d877272.js.map": "/city-state/static/js/main.7d877272.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8060c8dd.css",
+    "static/js/main.7d877272.js"
+  ]
+}
