@@ -1,0 +1,137 @@
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.header p {
+  font-size: 1rem;
+  margin: 0;
+  color: #666;
+}
+
+/* Input container styles */
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Loading and error styles */
+.loading {
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+
+/* Result container styles */
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.result {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.result h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.result p {
+  font-size: 1rem;
+  margin: 5px 0 0;
+  color: #555;
+}
+
+.img {
+  width: 5rem;
+  max-width: 400px;
+  margin-top: 40px;
+  object-fit: cover;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  border-radius: 500px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  &:focus {
+    outline: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+  .resultContainer {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .input {
+    font-size: 1.1rem;
+  }
+
+  .result h2 {
+    font-size: 1.3rem;
+  }
+
+  .result p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import City from "./City";
+import City from "./components/City";
 
 function App() {
   return (

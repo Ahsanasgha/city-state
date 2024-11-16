@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import classes from "./City.module.css";
+import Image from "../Image/1685451507690.jpg";
+import styles from "./City.module.css";
 
 function City() {
   const [pincode, setPincode] = useState("");
@@ -44,31 +45,37 @@ function City() {
   }, [pincode]);
 
   return (
-    <div className={classes.cityContainer}>
-      <h1>Enter the Pincode to find City and State</h1>
-      <div className={classes.inputContainer}>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h1>City and State Lookup</h1>
+        <p>Enter a valid 6-digit PIN code to find the corresponding city and state.</p>
+      </div>
+      <div className={styles.inputContainer}>
         <input
           type="text"
-          placeholder="Enter Pincode"
+          placeholder="Enter PIN code"
           value={pincode}
           maxLength={6}
-          minLength={6}
           onChange={handlePincodeChange}
-          required
-          className={classes.pincodeInput}
+          className={styles.input}
         />
-        {loading && <p className={classes.loadingText}>Loading...</p>}
+        {loading && <p className={styles.loading}>Loading...</p>}
       </div>
-      <div className={classes.detailsContainer}>
-        <div className={classes.detailItem}>
-          <h2>City:</h2>
-          <p className={classes.cityDetail}>{city}</p>
+      <div className={styles.resultContainer}>
+        <div className={styles.result}>
+          <h2>City</h2>
+          <p>{city || "-"}</p>
         </div>
-        <div className={classes.detailItem}>
-          <h2>State:</h2>
-          <p className={classes.stateDetail}>{state}</p>
+        <div className={styles.result}>
+          <h2>State</h2>
+          <p>{state || "-"}</p>
         </div>
       </div>
+      <img
+        className={styles.img}
+        src={Image}
+        alt="Decorative"
+      />
     </div>
   );
 }
