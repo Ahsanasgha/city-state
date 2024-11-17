@@ -76,6 +76,7 @@ function City() {
         src={Image}
         alt="Decorative"
       />
+      <p>Developed by Ahsan</p>
     </div>
   );
 }
