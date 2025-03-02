@@ -77,6 +77,7 @@ function City() {
         alt="Decorative"
       />
       <p>Developed by Ahsan</p>
+      02.03.2025
     </div>
   );
 }
